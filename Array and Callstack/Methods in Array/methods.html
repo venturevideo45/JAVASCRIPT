@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Example</title>
+    <body>
+    <h2><u>JavaScript Array Example</u></h2>
+    <h4>There are Two types of methods in JavaScript Arrays<br>JOIN<br>POP</h4>
+    <p id="join"></p>
+    <p id="myfirstpop"></p> 
+    <p id="mysecondpop"></p>
+<script>
+    var cars = ["Koenigsegg Jesko Absolut","Bugatti Chiron","Red Bull Formulla 1","BMW E46"];
+    document.getElementById("join").innerHTML = cars.join(" *");
+    document.getElementById("myfirstpop").innerHTML = cars;
+    cars.pop();
+    console.log(cars);
+    document.getElementById("mysecondpop").innerHTML = cars;
+</script>    
+</body>
+</html>
