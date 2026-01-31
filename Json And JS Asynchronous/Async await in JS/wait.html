@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Async Await in JavaScript</title>
+    <style></style>
+</head>
+<body>
+    <h1>Async Await in JavaScript</h1>
+    <button onclick="add(5,10)">Click Me</button>
+    <p id="demo"></p>
+    <script>
+        async function add(a,b) {
+            let responese = await a + b;
+            display(responese);
+            
+    
+        }
+        function display(some) {
+            document.getElementById("demo").innerHTML = `The sum is: ${some} of a and b`;
+        }
+    </script>
+</body>
+</html>
