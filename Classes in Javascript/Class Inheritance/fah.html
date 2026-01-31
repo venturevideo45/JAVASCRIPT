@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Inheritance</title>
+    </head>
+    <body>
+    <h1>Class Inheritance</h1>
+    <div id="details"></div>
+    <button onclick="fah()">Click me</button>
+    <script>
+        class car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            present() {
+                return 'I have a ' + this.carname;
+            }
+        }
+        class Model extends car {
+            constructor(brand, mod) {
+                super(brand);
+                this.model = mod;
+            }
+            show() {
+                return this.present() + ', it is a ' + this.model;
+            }
+        }
+        const mycar = new Model('Ford', 'Mustang');
+        document.getElementById("details").innerHTML = mycar.show();
+
+        const mycar1 = new Model('BMW', 'X5');
+        document.getElementById("details").innerHTML += '<br>' + mycar1.show();
+
+        const mycar2 = new Model('Audi', 'A6');
+        document.getElementById("details").innerHTML += '<br>' + mycar2.show();
+
+        const mycar3 = new Model('Koeningsegg', 'Agera RS');
+        document.getElementById("details").innerHTML += '<br>' + mycar3.show();
+
+        const mycar4 = new Model('Bugatti', 'Chiron');
+        document.getElementById("details").innerHTML += '<br>' + mycar4.show();
+
+        const mycar5 = new Model('Lamborghini', 'Aventador');
+        document.getElementById("details").innerHTML += '<br>' + mycar5.show();
+
+        const mycar6 = new Model('Ferrari', '488 GTB');
+        document.getElementById("details").innerHTML += '<br>' + mycar6.show();
+
+        const mycar7 = new Model('McLaren', '720S');
+        document.getElementById("details").innerHTML += '<br>' + mycar7.show();
+
+        const mycar8 = new Model('Porsche', '911 Turbo S');
+        document.getElementById("details").innerHTML += '<br>' + mycar8 .show();
+
+        const mycar9 = new Model('Tesla', 'Model S');
+        document.getElementById("details").innerHTML += '<br>' + mycar9.show();
+
+        const mycar10 = new Model('rolls-royce', 'phantom');
+        document.getElementById("details").innerHTML += '<br>' + mycar10.show();
+
+        const mycar11 = new Model('pagani', 'huayra');
+        document.getElementById("details").innerHTML += '<br>' + mycar11.show();
+
+        const mycar12 = new Model('aston martin', 'db11');
+        document.getElementById("details").innerHTML += '<br>' + mycar12
+.show();
+
+        const mycar13 = new Model('jaguar', 'f-type');
+        document.getElementById("details").innerHTML += '<br>' + mycar13.show();
+
+        const mycar14 = new Model('chevrolet', 'corvette');
+        document.getElementById("details").innerHTML += '<br>' + mycar14.show();
+
+        const mycar15 = new Model('dodge', 'charger');
+        document.getElementById("details").innerHTML += '<br>' + mycar15.show();
+
+        function fah() {
+        prompt("Hello! Welcome to the Car Inheritance Demo.");
+        }
+    </script>
+    </body>
+</html>

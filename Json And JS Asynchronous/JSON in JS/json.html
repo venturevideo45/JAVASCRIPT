@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON in JavaScript</title>
+    <style>
+        button {
+              height: 40px;
+              width: 200px;
+              background-image: linear-gradient(red,orange,yellow);
+              cursor: progress;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>JSON in JavaScript</h1>
+    <p>Working with JSON in JavaScript</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <div id="content"></div>
+    <script>
+        const CAR = {
+            "brand": "Koenigsegg",
+            "model": "Jesko Absolut",
+            "type": " Top-Speed Level",
+        }
+      var myJSON = JSON.stringify(CAR);
+      var obj = JSON.parse(myJSON);
+      function myFunction() {
+        document.getElementById("content").style.border = "2px solid black";
+        document.getElementById("content").innerHTML = myJSON + "<br>" + obj.brand;
+      }
+
+
+    </script>
+</body>    
+</html>
+    
