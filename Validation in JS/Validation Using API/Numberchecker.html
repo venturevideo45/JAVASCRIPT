@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Checker</title>
+        <style></style>
+    </head>
+    <body>
+        <h1>Number Checker</h1>
+        <p>Enter a number till 10 to 1000</p>
+
+        <input type="number" min="10" max="1000" id="id" placeholder="Enter a number" >
+        <button onclick="checkNumber()">Check Number</button>
+        <p id="result"></p>
+        <script>
+            function checkNumber() {
+                var num = document.getElementById("id");
+                if (!num.checkValidity()){
+                    document.getElementById("result").innerHTML = num.validationMessage;
+
+                }
+                else {
+                    document.getElementById("result").innerHTML = "The number " +" is valid.";
+                }
+            }
+        </script>
+    </body>
+</html>
